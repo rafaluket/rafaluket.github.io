@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Luquete Cavalcante</title>
+
+    <!-- Translator -->
+    <script src="https://unpkg.com/@andreasremdt/simple-translator@latest/dist/umd/translator.min.js" defer></script>
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- SwiperJS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="/JAVASCRIPT/main.js"></script>
+
+    <!-- SwiperCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- SweetAlert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <input type="checkbox" id="switch">
+    <div class="app">
+        <div class="body">
+            <div class="main-circle"></div>
+            <div class="phone">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="circle">
+                                <div class="crescent"></div>
+                            </div>
+                            <label for="switch">
+                                <div class="toggle"></div>
+                                <div class="names">
+                                    <p class="light">Light</p>
+                                    <p class="dark">Dark</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="checkbox" id="switchLanguage">
+                            <div class="app">
+                                <div class="position-relative">
+                                    <img class="brasil" src="/Assets/Images/brasil.png" alt="bandeira do Brasil">
+                                    <img class="eua" src="/Assets/Images/estados-unidos.png" alt="bandeira dos EUA">
+                                </div>
+                                <label for="switchLanguage">
+                                    <div class="toggleLanguage"></div>
+                                    <div class="namesLanguage">
+                                        <p class="pt">Português</p>
+                                        <p class="en">English</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="root" class="container-fluid">
+                        <div class="main-content">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4 sidebar">
+                                    <div class="sticky">
+                                        <img class="avatar mx-auto d-block"
+                                            src="https://media-exp1.licdn.com/dms/image/C4D03AQFwWOU8M1pbWw/profile-displayphoto-shrink_400_400/0/1603920319534?e=1648684800&v=beta&t=Aa7MiNiebVrn_GCxi5QS8RUuh5qE1YQMuibMlAUYB8Q"
+                                            alt="profile-picture">
+                                        <h3 class="text-center mt-4 color-theme">Rafael Luquete</h3>
+                                        <h5 data-i18n="sidebar.role" class="text-center mb-4">Desenvolvedor<br>Back-end
+                                        </h5>
+                                        <div class="socials text-center">
+                                            <a target="_blank" href="https://www.linkedin.com/in/rafaelluquete/"><i
+                                                    class="fa-brands fa-linkedin-in mx-1"></i></a>
+                                            <a target="_blank" href="https://github.com/rafaluket"><i
+                                                    class="fa-brands fa-github mx-1"></i></a>
+                                            <a target="_blank" href="mailto:rafael.luquete@gmail.com"><i
+                                                    class="fa-brands fa-solid fa-envelope mx-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-8">
+                                    <section id="intro">
+                                        <h3 data-i18n="intro.title" class="text-center title my-4">Sobre mim</h3>
+                                        <p data-i18n="intro.bio" id="bio" class="text-center px-5 mb-5">
+                                            Tive meu primeiro contato com programação em meados de 2017, mas apenas
+                                            para estudo. Em 2019 que entrei na faculdade realmente descobri o que era
+                                            programar
+                                            desde então sigo estudando e amando isso. Atualmente com o foco de me tornar
+                                            um desenvolvedor blockchain.
+                                        </p>
+                                    </section>
+                                    <section class="mt-5" id="skills">
+                                        <h3 data-i18n="skills.title" class="text-center title my-4">Habilidades</h3>
+                                        <p data-i18n="skills.description" class="text-center px-5">
+                                            Abaixo temos as ferramentas, linguagens, etc e seu respectivo tempo que
+                                            trabalhei com elas durante toda a minha carreira:
+                                        </p>
+                                        <div class="row d-flex justify-content-center mb-5">
+                                            <div>
+                                                <span
+                                                    class="badge badge-pill badge-language badge-custom background-theme hoverRise"
+                                                    data-toggle="tooltip" data-placement="bottom" title=""
+                                                    data-original-title="3 years or more">C#</span>
+                                                <span
+                                                    class="badge badge-pill badge-framework badge-custom background-theme hoverRise"
+                                                    data-toggle="tooltip" data-placement="bottom" title=""
+                                                    data-original-title="1 year ~ 2 years">JavaScript</span>
+                                                <span
+                                                    class="badge badge-pill badge-language badge-custom background-theme hoverRise"
+                                                    data-toggle="tooltip" data-placement="bottom" title=""
+                                                    data-original-title="2 years ~ 3 years">SQLServer</span>
+                                                <span
+                                                    class="badge badge-pill badge-language badge-custom background-theme hoverRise"
+                                                    data-toggle="tooltip" data-placement="bottom" title=""
+                                                    data-original-title="1 month ~ 6 months">Hadoop</span>
+                                                <span
+                                                    class="badge badge-pill badge-platform badge-custom background-theme hoverRise"
+                                                    data-toggle="tooltip" data-placement="bottom" title=""
+                                                    data-original-title="6 months ~ 1 year">HTML</span>
+                                                <span
+                                                    class="badge badge-pill badge-platform badge-custom background-theme hoverRise"
+                                                    data-toggle="tooltip" data-placement="bottom" title=""
+                                                    data-original-title="6 months ~ 1 year">CSS</span>
+                                                <span
+                                                    class="badge badge-pill badge-framework badge-custom background-theme hoverRise"
+                                                    data-toggle="tooltip" data-placement="bottom" title=""
+                                                    data-original-title="1 year ~ 2 years">PHP</span>
+                                                <span
+                                                    class="badge badge-pill badge-framework badge-custom background-theme hoverRise"
+                                                    data-toggle="tooltip" data-placement="bottom" title=""
+                                                    data-original-title="2 years ~ 3 years">Bootstrap</span>
+                                                <span
+                                                    class="badge badge-pill badge-others badge-custom background-theme hoverRise"
+                                                    data-toggle="tooltip" data-placement="bottom" title=""
+                                                    data-original-title="1 month ~ 6 months">.NET</span>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section id="jobs">
+                                        <h3 data-i18n="jobs.title" class="text-center title my-4">Experiência</h3>
+                                        <!-- Slider main container -->
+                                        <div class="swiper mx-auto">
+                                            <!-- Additional required wrapper -->
+                                            <div class="swiper-wrapper mt-4">
+                                                <!-- Slides -->
+
+                                                <div class="swiper-slide">
+                                                    <h3 class="company badge-custom">Itaú</h3>
+                                                    <div class="description mx-auto">
+                                                        <div class="row">
+                                                            <div class="col-md-6 mt-4">
+                                                                <span data-i18n="jobs.rateSkills">Habilidades mais
+                                                                    avaliadas</span>
+                                                                <div class="ms-1">
+                                                                    <span
+                                                                        class="badge badge-pill badge-others badge-custom-small background-theme"
+                                                                        data-toggle="tooltip" data-placement="bottom"
+                                                                        title=""
+                                                                        data-original-title="1 month ~ 6 months">C#</span>
+                                                                    <span
+                                                                        class="badge badge-pill badge-others badge-custom-small background-theme"
+                                                                        data-toggle="tooltip" data-placement="bottom"
+                                                                        title=""
+                                                                        data-original-title="1 month ~ 6 months">SQL</span>
+                                                                    <span
+                                                                        class="badge badge-pill badge-others badge-custom-small background-theme"
+                                                                        data-toggle="tooltip" data-placement="bottom"
+                                                                        title=""
+                                                                        data-original-title="1 month ~ 6 months">Hadoop</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 mt-4">
+                                                                <span data-i18n="jobs.durationTitle">Duração</span>
+                                                                <div>
+                                                                    <span data-i18n="jobs.durationDescription"
+                                                                        class="duration">11/2021 ~ Atualmente</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <span data-i18n="jobs.descriptionTitle"
+                                                                    class="me-3 mt-3">Descrição</span>
+                                                                <p data-i18n="jobs.descriptionDesc1"
+                                                                    class="text-center px-4 ms-2">
+                                                                    Desenvolvimento de automações em
+                                                                    C#, .NET.
+                                                                    Alteração em infraestrutura no banco
+                                                                    de dados utilizando SQL SERVER,
+                                                                    HADOOP e AWS.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <h3 class="company badge-custom">Itaú</h3>
+                                                    <div class="description mx-auto">
+                                                        <div class="row">
+                                                            <div class="col-md-6 mt-4">
+                                                                <span data-i18n="jobs.rateSkills">Habilidades mais
+                                                                    avaliadas</span>
+                                                                <div class="ms-1">
+                                                                    <span
+                                                                        class="badge badge-pill badge-others badge-custom-small background-theme"
+                                                                        data-toggle="tooltip" data-placement="bottom"
+                                                                        title=""
+                                                                        data-original-title="1 month ~ 6 months">C#</span>
+                                                                    <span
+                                                                        class="badge badge-pill badge-others badge-custom-small background-theme"
+                                                                        data-toggle="tooltip" data-placement="bottom"
+                                                                        title=""
+                                                                        data-original-title="1 month ~ 6 months">SQL</span>
+                                                                    <span
+                                                                        class="badge badge-pill badge-others badge-custom-small background-theme"
+                                                                        data-toggle="tooltip" data-placement="bottom"
+                                                                        title=""
+                                                                        data-original-title="1 month ~ 6 months">JavaScript</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 mt-4">
+                                                                <span data-i18n="jobs.durationTitle">Duração</span>
+                                                                <div>
+                                                                    <span class="duration">01/2021 ~ 11/2021</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <span data-i18n="jobs.descriptionTitle"
+                                                                    class="me-3 mt-3">Descrição</span>
+                                                                <p data-i18n="jobs.descriptionDesc2"
+                                                                    class="text-center px-4 ms-2">
+                                                                    Desenvolvimento de bots para
+                                                                    automatizar processos internos
+                                                                    e reduzir o tempo de trabalho em
+                                                                    tarefas repetitivas.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <h3 class="company badge-custom">Actmob</h3>
+                                                    <div class="description mx-auto">
+                                                        <div class="row">
+                                                            <div class="col-md-6 mt-4">
+                                                                <span data-i18n="jobs.rateSkills">Habilidades mais
+                                                                    avaliadas</span>
+                                                                <div class="ms-1">
+                                                                    <span
+                                                                        class="badge badge-pill badge-others badge-custom-small background-theme"
+                                                                        data-toggle="tooltip" data-placement="bottom"
+                                                                        title="">HTML</span>
+                                                                    <span
+                                                                        class="badge badge-pill badge-others badge-custom-small background-theme"
+                                                                        data-toggle="tooltip" data-placement="bottom"
+                                                                        title="1 mes - 6 meses">CSS</span>
+                                                                    <span
+                                                                        class="badge badge-pill badge-others badge-custom-small background-theme"
+                                                                        data-toggle="tooltip" data-placement="bottom"
+                                                                        title=""
+                                                                        data-original-title="1 month ~ 6 months">PHP</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 mt-4">
+                                                                <span data-i18n="jobs.durationTitle">Duração</span>
+                                                                <div>
+                                                                    <span class="duration">05/2020 ~ 11/2020</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <span data-i18n="jobs.descriptionTitle"
+                                                                    class="me-3 mt-3">Descrição</span>
+                                                                <p data-i18n="jobs.descriptionDesc3"
+                                                                    class="text-center px-4 ms-2">
+                                                                    Desenvolvimento de sites exclusivos
+                                                                    em WordPress para empresas de
+                                                                    diversos seguimentos.
+                                                                    Desenvolvimento de aplicações para
+                                                                    estabelecimentos alimentícios.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- If we need pagination -->
+                                            <div class="swiper-pagination"></div>
+
+                                            <!-- If we need navigation buttons -->
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-button-next"></div>
+                                        </div>
+                                    </section>
+                                    <section class="mt-5" id="education">
+                                        <h3 data-i18n="education.title" class="text-center title my-4">Educação</h3>
+                                        <div class="company badge-custom">
+                                            <h3 data-i18n="education.course">Sistemas de Informação</h3>
+                                        </div>
+                                        <div class="description mx-auto mb-5">
+                                            <div class="row">
+                                                <h5 data-i18n="education.description" class="text-center mt-4">(UMC) Universidade de Mogi das Cruzes</h5>
+                                                <h6 class="opacity-75">01/2019 ~ 12/2022</h6>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section id="contact">
+                                        <h3 data-i18n="contact.title" class="text-center title my-4">Contato</h3>
+                                        <form class="mx-auto" id="formEmail">
+                                            <div class="row">
+                                                <div class="col-md-6">
+
+                                                    <input type="text" name="name" id="name" placeholder="nome"><br>
+
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="email" name="email" id="email" placeholder="email"><br>
+
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col-md-12">
+                                                    <input type="text" name="subject" id="subject"
+                                                        placeholder="assunto"><br>
+
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col-md-12">
+                                                    <textarea name="message" id="message" rows="7"
+                                                        placeholder="mensagem"></textarea>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 mx-auto">
+                                                    <input id="button" class="btnSend hoverRise" type="submit" value="Enviar">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </section>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- SendMailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('user_xajdBFJZ5k4Mcteu98JKe')
+    </script>
+</body>
+
+</html>

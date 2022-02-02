@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="font-size: 1.35em;background:linear-gradient(40deg, #8983F7, #A3DAFB 70%);padding:50px 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+        <div style="max-width:600px;margin:auto">
+            <div style="box-shadow: 0 3px 40px black;background-color: #26242E;;padding:15px 30px 25px 30px;border-radius:10px">
+                <div style="text-align:center;margin:20px 0 30px;">
+                    <span
+                        style="box-shadow: 0 3px 40px black; color: #26242E;background: linear-gradient(40deg, #8983F7, #A3DAFB 70%);font-size:40px;margin-left:10px; font-weight: bold; padding: 5px; border-radius: 10px;">Portfolio's
+                        Message</span>
+                    <p style="font-style: italic; color: #A3DAFB;">Hello <span style="font-style:normal;">Rafael Luquete</span><br>This
+                        email was send by your portfolio's form.</p>
+                </div>
+
+                <div style="background-color:rgba(0, 0, 0, 0.1); color: white; padding: 1em; border-radius: 10px;">
+
+                    <span style="opacity: 0.8; font-style: italic;">name:</span><span style="opacity: 1; font-weight: bold;"> {{name}}</span><br>
+                    <span style="opacity: 0.8; font-style: italic;">email:</span><span style="opacity: 1; color: white; text-decoration: none; font-weight: bold;"> {{email}}</span>
+                    <p style="padding: 12px; border-left: 4px solid #8a8989; font-style: italic;">{{message}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var p = document.getElementById('a');
+        p.style.textDecoration = 'none';
+    </script>
+</body>
+
+</html>
