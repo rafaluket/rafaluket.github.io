@@ -326,7 +326,6 @@ span.badge-custom {
     display: inline-block;
     padding: 0.1em 0.4em;
     font-weight: 700;
-    line-height: 1;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
@@ -361,7 +360,12 @@ span.badge-custom {
     font-size: 90%;
     opacity: 0.6;
 }
-
+.footer{
+    
+    box-shadow: -2px -9px 40px 0 rgba(0, 0, 0, .1);
+    max-width: 1020px;
+    border-radius: 40px 40px 0 0;
+}
 /* -------- Switch ------------*/
 [type="checkbox"] {
     display: none;
@@ -377,7 +381,8 @@ span.badge-custom {
 }
 
 [type="checkbox"]#switch:checked+.app input,
-[type="checkbox"]#switch:checked+.app textarea {
+[type="checkbox"]#switch:checked+.app textarea
+{
     background-color: #34323D;
     color: white;
 }
@@ -403,7 +408,10 @@ span.badge-custom {
 }
 
 /* App */
-[type="checkbox"]#switch:checked+.app .body {
+[type="checkbox"]#switch:checked+.app .body,
+[type="checkbox"]#switch:checked+.app footer,
+[type="checkbox"]#switch:checked+.app .footer,
+[type="checkbox"]#switch:checked+.app {
     background-color: #26242E;
     color: white;
 }
@@ -551,4 +559,9 @@ span.badge-custom {
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
         margin-bottom: 3em;
     }
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
 }

@@ -46,6 +46,9 @@ $(document).ready(function () {
         },
         contact: {
             title: "Contact",   
+        },
+        footer: {
+            description: "You can find this whole project on "
         }
     };
 
@@ -83,6 +86,9 @@ $(document).ready(function () {
         },
         contact: {
             title: "Contato",   
+        },
+        footer: {
+            description: "Você pode encontrar esse projeto no "
         }
     };
     const btn = document.getElementById('button');
