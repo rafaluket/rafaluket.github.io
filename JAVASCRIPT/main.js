@@ -14,6 +14,10 @@ $(document).ready(function () {
 
     //Dictionary Translator
     var englishTranslation = {
+        theme:{
+          light: "Light",
+          dark: "Dark"  
+        },
         sidebar: {
             role: 'Back-end Developer',
         },
@@ -46,6 +50,10 @@ $(document).ready(function () {
     };
 
     var portugueseTranslation = {
+        theme:{
+            light: "Claro",
+            dark: "Escuro"  
+          },
         sidebar: {
             role: 'Desenvolvedor<br>Back-end'
         },
