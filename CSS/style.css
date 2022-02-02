@@ -498,7 +498,7 @@ span.badge-custom {
     transition: all 0.3s ease-in;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
     label{
         width: 100%;
     }
