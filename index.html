@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael Luquete Cavalcante</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.ico">
 
     <!-- Translator -->
     <script src="https://unpkg.com/@andreasremdt/simple-translator@latest/dist/umd/translator.min.js" defer></script>
@@ -82,9 +83,22 @@
                             <div class="row">
                                 <div class="col-xs-12 col-md-4 sidebar">
                                     <div class="sticky">
-                                        <img class="avatar mx-auto d-block"
-                                            src="https://media-exp1.licdn.com/dms/image/C4D03AQFwWOU8M1pbWw/profile-displayphoto-shrink_400_400/0/1603920319534?e=1648684800&v=beta&t=Aa7MiNiebVrn_GCxi5QS8RUuh5qE1YQMuibMlAUYB8Q"
-                                            alt="profile-picture">
+                                        <div class="flip-card">
+                                            <div class="flip-card-inner">
+                                              <div class="flip-card-front">
+                                                <img class="avatar mx-auto d-block lightAvatar"
+                                                src="/Assets/Images/profile-picLight.png"
+                                                alt="profile-picture">
+                                                <img class="avatar mx-auto d-block darkAvatar"
+                                                src="/Assets/Images/profile-picDark.png"
+                                                alt="profile-picture">
+                                              </div>
+                                              <div class="flip-card-back">
+                                               <img src="/Assets/Images/logo.png" alt="logo" class="avatar mx-auto d-block">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        
                                         <h3 class="text-center mt-4 color-theme">Rafael Luquete</h3>
                                         <h5 data-i18n="sidebar.role" class="text-center mb-4">Desenvolvedor<br>Back-end
                                         </h5>
@@ -373,7 +387,7 @@
             </div>
         </div>
         <footer>
-            <div class="mx-auto mt-3 text-center mb-0 p-3 footer">
+            <div class="mx-auto mt-3 text-center mb-0 p-3">
                 <span data-i18n="footer.description">
                     Você pode encontrar esse projeto no
                 </span>
